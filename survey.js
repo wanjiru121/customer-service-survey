@@ -31,7 +31,7 @@ function guess(id, guess){
     var button = document.getElementById(id);
     button.onclick = function(){
         quiz.guess(guess);
-        sendEmail();
+        sendMail();
         populate();
     }
 
@@ -46,19 +46,14 @@ function showProgress(){
 }
 
 
-function sendEmail() {
-    Email.send({
-        Host : "smtp.mailtrap.io",
-        Username : "rosewanjiru121@gmail.com",
-        Password : "0714782842",
-        To : 'rosewanjiru121@gmail.com',
-        From : "file:///C:/Users/student/Desktop/savelberg_survey/index.html",
-        Subject : "Test email",
-        Body : "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-    }).then(
-      message => alert(message)
-    );
-    }
+function sendMail() {
+    var link = "mailto: rosewanjiru121@gmail.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape("Never mind")
+    ;
+
+    window.location.href = link;
+}
 
 
 
