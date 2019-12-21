@@ -4,6 +4,7 @@
         <meta charset="UTF=8">
         <title>Savelberg</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
 
     <body>
@@ -14,22 +15,22 @@
                 <p id="question"></p>
 
                 <div class="buttons">
-                    <!-- <p style="font-size: 60px;">&#x1F354</p> -->
-                    <button id="btn0" > <p style="font-size:60px">😄</p>
-                        <span id="choice0"></span></button>
-                    <button id="btn1"><p style="font-size:60px">😊</p><span id="choice1"></span></button>
-                    <button id="btn2"><p style="font-size:60px">😐</p><span id="choice2"></span></button>
-                    <button id="btn3"><p style="font-size:60px">😬</p><span id="choice3"></span></button>
-
+                    <button id="btn0" type="submit"> <p style="font-size:60px">😄</p><span id="choice0"></span></button>
+                    <button id="btn1" type="submit"><p style="font-size:60px">😊</p><span id="choice1"></span></button>
+                    <button id="btn2" type="submit"><p style="font-size:60px">😐</p><span id="choice2"></span></button>
+                    <button id="btn3" type="submit"><p style="font-size:60px">😬</p><span id="choice3"></span></button>
                 </div>
+
+
 
                 <hr style="margin-top: 50px;">
                 <footer>
                     <p id="progress">Question x of y</p>
                 </footer>
-                </h1>
+
             </div>
         </div>
+
 
         <script src="quiz_controller.js"></script>
         <script src="question.js"></script>

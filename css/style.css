@@ -49,3 +49,16 @@ body{
 #btn0:focus, #btn1:focus, #btn2:focus, #btn3:focus{
     outline: 0;
 }
+
+#cont{
+    background-color: rgb(185, 212, 212);
+    width: 600px;
+    color: white;
+    height: 300px;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: large;
+    font-family: fantasy;
+}
