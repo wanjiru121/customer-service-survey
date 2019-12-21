@@ -47,7 +47,7 @@ function showProgress(){
 
 
 function sendMail() {
-    var link = "mailto: rosewanjiru121@gmail.com"
+    var link = "mailto:rosewanjiru121@gmail.com"
              + "&subject=" + escape("This is my subject")
              + "&body=" + escape("Never mind")
     ;
