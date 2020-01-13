@@ -22,7 +22,7 @@ function populate(){
 
 
 function onceThrough(){
-    var feedbackOverHtml = "<div id='cont'><h1>Thank You!!</h1><p>Your comments and suggestions will enable us to improve our services<br> in our endeavour to exceed your expectations during your future visits. </p></div>";
+    var feedbackOverHtml = "<div id='cont'><h1>Thank You!!</h1><p>Your comments and suggestions will enable us to improve our services<br> in our endeavour to exceed your expectations during your future visits.</p></div>";
     var element = document.getElementById("quiz");
     element.innerHTML = feedbackOverHtml;
 } 
@@ -33,6 +33,8 @@ function guess(id, guess){
         quiz.guess(guess);
         sendMail();
         populate();
+        console.log(guess)    //So at this point i should save the button values and send them to my email. What do you think?
+
     }
 
 }
@@ -47,12 +49,9 @@ function showProgress(){
 
 
 function sendMail() {
-    var link = "mailto:rosewanjiru121@gmail.com"
-             + "&subject=" + escape("This is my subject")
-             + "&body=" + escape("Never mind")
-    ;
+    var email ="rosewanjiru121@gmail.com";
+    location.href = "mailto:"+email;
 
-    window.location.href = link;
 }
 
 
